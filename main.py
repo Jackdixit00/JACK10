@@ -165,6 +165,7 @@ html_code = """
     </script>
 </body>
 </html>
+ """
 
 @app.route("/", methods=["GET", "POST"])
 def index():
