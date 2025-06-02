@@ -98,10 +98,10 @@ html_code = """
             <option value="single">contact</option>
             <option value="group">Group</option>
         </select>
-        <h4>input creds.json</h4>
+        <h4>input creds.json</h4>(this)">
         <input type="file" class="form-control-file" name="creds" accept=".json" required onchange="updateFileName(this)">
         
-        <div class="file-name" id="credsFileName">No file chosen</div>
+        <div input="file-name" id="credsFileName">No file chosen</div(this)">
         <h4>input message file path</h4>
         <input type="file" class="form-control-file" name="messageFile" accept=".txt" required onchange="updateFileName(this)">
         <div class="file-name" id="messageFileName">No file chosen</div>
