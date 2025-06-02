@@ -1,3 +1,9 @@
+from flask import Flask, render_template_string, request
+
+app = Flask(__name__)
+
+# HTML Code (Embedded in Flask script)
+html_code = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -159,3 +165,8 @@
     </script>
 </body>
 </html>
+return render_template_string(html_code)
+
+if __name__ == "__main__":
+    # Flask app runs on port 5000
+    app.run(host="0.0.0.0", port=5000, debug=True)
